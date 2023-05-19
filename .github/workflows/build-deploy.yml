@@ -6,6 +6,10 @@ on:
 # Add env
 env:
   CONTAINER_REGISTRY: acr0519xba6jpd47oyrc.azurecr.io  # Azure Container Registry のドメイン (~.azurecr.io) をこちらに設定
+  # Add envs
+  RESOURCE_GROUP_NAME: Handson01-CICD # 準備タスクで作成されたリソースグループ名をここに記載
+  CONTAINERAPP_NAME: ctapp-demo-api # 準備タスクで作成された API Container App 名 `ctapp-demo-api` をここに記載
+  
 jobs:
   build:
     runs-on: ubuntu-22.04
